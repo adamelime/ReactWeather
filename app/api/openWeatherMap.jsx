@@ -15,12 +15,7 @@ module.exports = {
       }
      },
      function(res) {
-       if( res.data){
-         throw new Error(res.data.message);
-       } else {
-         throw new Error(res || "Cannot find city");
-       }
-
+       throw new Error('Cannot find city.');   
     });
   }
 }
